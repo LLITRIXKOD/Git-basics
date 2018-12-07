@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Git Basicis</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Git</h1>
+					<h3>Control version system</h3>
+					<p>
+						<small>Created by Marusich Igor</small>
+					</p>
+				</section>
+				<section>
+					<h2>What is Git?</h2>
+						<p class="fragment">Is a version control system for tracking changes in files and coordinating work on those files among multiple people.</p>
+				</section>
+				<section>
+					<h2>Install</h2>
+					<p><a href="https://git-scm.com/download">https://git-scm.com/download</a></p>
+				</section>
+				<section>
+					<h2>Scandals! Intrigue! Investigations!</h2>
+					<ul>
+						<li class="fragment">Git doesn't store folders</li>
+						<li class="fragment">Git doesn't store files</li>
+						<li class="fragment">Revision do not have a sequence number</li>
+						<li class="fragment">Commits may not go in order</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Questions</h2>
+					<ul>
+						<li class="fragment">How does all this work?</li>
+						<li class="fragment">How can all this be understood and remembered?</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Git. Almost under the hood</h2>
+					<p class="fragment"><img src="./img/7046ab9e7b5a8da800763ba268880dbf.png" alt="Commits graph"></p>
+				</section>
+				<section>
+					<section>
+							<h2>Cheats</h2>
+							<img src="./img/1_JpeXXlqe6t_T7lubc46g1g.jpeg" alt="Push joke">
+					</section>
+					<section>
+						<h3>Create</h3>
+						<ul>
+								<li class="fragment"><span style="color: #28f0ce">git clone</span> ssh://user@domain.com/repo.git</li>
+									<li class="fragment"><span style="color: #28f0ce">git init</span></li>
+						</ul>
+					</section>
+					<section>
+						<h3>Locale changes</h3>
+						<ul>
+							<li class="fragment"><span style="color: #28f0ce">git status</span></li>
+							<li class="fragment"><span style="color: #28f0ce">git diff</span></li>
+							<li class="fragment"><span style="color: #28f0ce">git add -A <span style="color: grey">or</span> git add .</span></li>
+							<li class="fragment"><span style="color: #28f0ce">git add -p [file]</span></li>
+							<li class="fragment"><span style="color: #28f0ce">git commit -a</span></li>
+							<li class="fragment"><span style="color: #28f0ce">git commit</span></li>
+							<li class="fragment"><span style="color: #28f0ce">git commit --amend</span></li>
+						</ul>
+					</section>
+					<section>
+						<h3>Commit history</h3>
+						<ul>
+								<li class="fragment"><span style="color: #28f0ce">git log</span></li>
+								<li class="fragment"><span style="color: #28f0ce">git log -p [file]</span></li>
+								<li class="fragment"><span style="color: #28f0ce">git blame [file]</span></li>
+							</ul>
+					</section>
+					<section>
+						<h3>Branches</h3>
+						<ul>
+								<li class="fragment"><span style="color: #28f0ce">git branch -av</span></li>
+								<li class="fragment"><span style="color: #28f0ce">git checkout [branch]</span></li>
+								<li class="fragment"><span style="color: #28f0ce">git branch [new_branch]</span></li>
+								<li class="fragment"><span style="color: #28f0ce">git checkout -b [new_branch]</span></li>
+								<li class="fragment"><span style="color: #28f0ce">git branch -d [branch]</span></li>
+						</ul>
+					</section>
+					<section>
+						<h3>Update and publish</h3>
+						<ul>
+								<li class="fragment"><span style="color: #28f0ce">git remote -v</span></li>
+								<li class="fragment"><span style="color: #28f0ce">git fetch [repository]</span></li>
+								<li class="fragment"><span style="color: #28f0ce">git pull [repository] [branch]</span></li>
+								<li class="fragment"><span style="color: #28f0ce">git push [repository] [branch]</span></li>
+								<li class="fragment"><span style="color: #28f0ce">git branch -dr [repository/branch]</span></li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Best practice</h2>
+					<ul>
+					<li class="fragment">Add related changes to commit</li>
+					<li class="fragment">Make commits often</li>
+					<li class="fragment">Don't publish commit with unfinished work</li>
+					<li class="fragment">Test your code after commit</li>
+					<li class="fragment">Write good comments</li>
+					<li class="fragment">CVS is not backup storage</li>
+					<li class="fragment">Use branch</li>
+					<li class="fragment">Help and documentation: <span style="color: #28f0ce">git help [command]</span></li>
+					</ul>
+				</section>
+				<section>
+					<h2>Conclusion</h2>
+					<ul>
+						<li class="fragment">Git is very flexible</li>
+						<li class="fragment">Use the console client</li>
+						<li class="fragment">Think of new processes</li>
+						<li class="fragment">Write at your pleasure</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Thanks for watching!</h2>
+					<img src="./img/bf0302e1488769c.jpg" alt="Leave Building joke" width="450">
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
